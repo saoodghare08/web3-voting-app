@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 Voting dApp</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f4f4f4; }
+        .container { max-width: 600px; margin: auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        button { padding: 10px 15px; font-size: 16px; cursor: pointer; border-radius: 5px; border: none; background: #007bff; color: white; margin-top: 10px; }
+        button:hover { background: #0056b3; }
+        input { padding: 10px; font-size: 16px; width: 300px; margin-top: 10px; }
+        h2, h3 { border-bottom: 2px solid #eee; padding-bottom: 5px; }
+        #status { margin-top: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Web3 Voting dApp</h2>
+        
+        <button id="connectButton">Connect Wallet</button>
+
+        <hr>
+
+        <h3>Owner's Area</h3>
+        <input type="text" id="voterAddressInput" placeholder="Enter new voter's address" />
+        <button id="addVoterButton">Add Voter</button>
+
+        <hr>
+
+        <h3>Vote Here</h3>
+        <button class="voteButton" data-proposal="0">Vote for Option A</button>
+        <button class="voteButton" data-proposal="1">Vote for Option B</button>
+        <button class="voteButton" data-proposal="2">Vote for Option C</button>
+
+        <div id="status">Please connect your wallet.</div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
