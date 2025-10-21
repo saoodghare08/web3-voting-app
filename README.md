@@ -11,3 +11,6 @@ REPORT_GAS=true npx hardhat test
 npx hardhat node
 npx hardhat ignition deploy ./ignition/modules/Lock.js
 ```
+To try the app - open two terminals in root folder and run the following commands in each terminal-
+1. npx hardhat node
+2. http-server
